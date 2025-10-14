@@ -1,0 +1,55 @@
+# Compiled class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log Files #
+*.log
+logs/
+target/*.log
+
+# Maven #
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar # Maven Wrapper JAR, if not checked in
+.mvn/wrapper/maven-wrapper.properties # Maven Wrapper properties, if not checked in
+
+# Gradle #
+.gradle/
+build/
+
+# IntelliJ IDEA #
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse #
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code #
+.vscode/
+
+# Operating System Files #
+.DS_Store
+Thumbs.db
+
+# Spring Boot specific #
+!**/src/main/**/target/classes/static/
+!**/src/main/**/target/classes/public/
