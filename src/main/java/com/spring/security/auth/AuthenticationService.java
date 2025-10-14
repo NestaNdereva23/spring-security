@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.spring.security.config.JwtService;
+import com.spring.security.user.Role;
 import com.spring.security.user.User;
 import com.spring.security.user.UserRepository;
 
@@ -28,7 +29,7 @@ public class AuthenticationService {
             .lastname(request.getLastname())
             .email(request.getEmail())
             .password(passwordEncoder.encode(request.getPassword()))
-            .role(request.getRole())
+            .role(Role.USER)
             .build();
         repository.save(user);
         // var savedUser = repository.save(user);
